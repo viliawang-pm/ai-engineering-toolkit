@@ -38,7 +38,7 @@ secure your AI systems.
 
 ```bash
 # Add as a plugin marketplace source
-/plugin marketplace add viliawangyuhan-creator/ai-engineering-toolkit
+/plugin marketplace add viliawang-pm/ai-engineering-toolkit
 
 # Or install individual skills
 /plugin install prompt-evaluator@ai-engineering-toolkit
@@ -49,7 +49,7 @@ secure your AI systems.
 
 ```bash
 # Clone the repository
-git clone https://github.com/viliawangyuhan-creator/ai-engineering-toolkit.git
+git clone https://github.com/viliawang-pm/ai-engineering-toolkit.git
 
 # Copy skills to your project
 cp -r ai-engineering-toolkit/skills/prompt-evaluator .claude/skills/
