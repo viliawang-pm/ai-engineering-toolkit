@@ -2,11 +2,12 @@
 
 # AI Engineering Toolkit
 
-### Stop reading about AI engineering. Start executing it.
+### Your AI agent knows how to code. These skills teach it how to *engineer*.
 
-6 production-ready Agent Skills that turn your AI coding assistant into an AI engineering expert — covering prompt evaluation, context optimization, RAG design, agent security, evaluation frameworks, and product thinking.
+6 executable workflows that turn Claude Code / WorkBuddy into a senior AI engineering partner — prompt evaluation, context optimization, RAG pipeline design, agent security auditing, evaluation frameworks, and product thinking.
 
 [![GitHub Stars](https://img.shields.io/github/stars/viliawang-pm/ai-engineering-toolkit?style=social)](https://github.com/viliawang-pm/ai-engineering-toolkit)
+[![GitHub Forks](https://img.shields.io/github/forks/viliawang-pm/ai-engineering-toolkit?style=social)](https://github.com/viliawang-pm/ai-engineering-toolkit/fork)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-v1.0-blue)](https://agentskills.io)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-ready-8A2BE2)]()
@@ -18,45 +19,31 @@
 
 ---
 
+## 🎬 See It Work — 30 Seconds
+
+<div align="center">
+<img src="assets/demo.svg" alt="prompt-evaluator demo — scoring a system prompt from 28 to 82 in Claude Code" width="100%">
+<br>
+<sub>prompt-evaluator: diagnose → score → rewrite → re-score, all inside Claude Code</sub>
+</div>
+
+---
+
 ## The Problem
 
-Most AI engineering resources tell you **what** RAG, context engineering, or prompt optimization is. But when you sit down to actually build, you're on your own — figuring out chunking strategies, token budgets, and safety architectures from scratch.
+You know **what** RAG, context engineering, and prompt optimization are. But when you sit down to build, you're on your own — figuring out chunking strategies, token budgets, and safety architectures from scratch, one Stack Overflow tab at a time.
 
-**This toolkit changes that.** Each skill is a structured, executable workflow that your AI agent loads and follows step by step. Think of it as hiring a senior AI engineer who sits inside your IDE.
+**This toolkit closes that gap.** Each skill is a structured, step-by-step workflow that your AI agent loads and executes. Think of it as a senior AI engineer who lives inside your IDE and never forgets a best practice.
 
-<table>
-<tr>
-<td width="50%">
+### Before / After
 
-**Without This Toolkit**
-
-- "Here's what RAG is" (theory)
-- Vague best practices scattered across blog posts
-- Trial and error with prompt design
-- No systematic evaluation framework
-- Security as an afterthought
-
-</td>
-<td width="50%">
-
-**With This Toolkit**
-
-- "Here's how to build, evaluate & optimize a RAG pipeline" (execution)
-- Decision trees, scoring rubrics, and checklists
-- 8-dimension prompt scoring with automated rewrites
-- CI/CD-integrated eval harness with LLM-as-Judge
-- 5-layer defense architecture with 65-point red-team checklist
-
-</td>
-</tr>
-</table>
-
-## 🎬 Demo
-
-<!-- 📌 TODO: Record a 30-second GIF showing prompt-evaluator in action -->
-<!-- Replace the placeholder below with your actual GIF -->
-
-> **Coming soon** — a 30-second demo showing the prompt-evaluator skill scoring a real system prompt inside Claude Code. Star the repo to get notified!
+| | Without this toolkit | With this toolkit |
+|---|---|---|
+| **Prompt quality** | "Looks good to me" (gut feeling) | 8-dimension score: **28/100** → rewrite → **82/100** |
+| **Context window** | Hits 128K limit, answers truncate | Token budget plan: output space **6% → 16%**, truncation → zero |
+| **RAG pipeline** | Copy a tutorial, hope for the best | Decision tree: chunking → embedding → retrieval → evaluation |
+| **Agent security** | Ship and pray | 65-point red-team audit, 3 critical failures caught before launch |
+| **Evaluation** | Manual spot-checking | Automated eval harness with LLM-as-Judge + CI/CD integration |
 
 ## 📦 What's Inside
 

@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 620">
+  <style>
+    @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+    @keyframes l1  { 0%,2%{opacity:0} 3%{opacity:1} }
+    @keyframes l2  { 0%,6%{opacity:0} 7%{opacity:1} }
+    @keyframes l3  { 0%,10%{opacity:0} 11%{opacity:1} }
+    @keyframes l4  { 0%,14%{opacity:0} 15%{opacity:1} }
+    @keyframes l5  { 0%,18%{opacity:0} 19%{opacity:1} }
+    @keyframes l6  { 0%,22%{opacity:0} 23%{opacity:1} }
+    @keyframes l7  { 0%,26%{opacity:0} 27%{opacity:1} }
+    @keyframes l8  { 0%,30%{opacity:0} 31%{opacity:1} }
+    @keyframes l9  { 0%,34%{opacity:0} 35%{opacity:1} }
+    @keyframes l10 { 0%,38%{opacity:0} 39%{opacity:1} }
+    @keyframes l11 { 0%,42%{opacity:0} 43%{opacity:1} }
+    @keyframes l12 { 0%,46%{opacity:0} 47%{opacity:1} }
+    @keyframes l13 { 0%,50%{opacity:0} 51%{opacity:1} }
+    @keyframes l14 { 0%,54%{opacity:0} 55%{opacity:1} }
+    @keyframes l15 { 0%,58%{opacity:0} 59%{opacity:1} }
+    @keyframes l16 { 0%,62%{opacity:0} 63%{opacity:1} }
+    @keyframes l17 { 0%,66%{opacity:0} 67%{opacity:1} }
+    @keyframes l18 { 0%,70%{opacity:0} 71%{opacity:1} }
+    @keyframes l19 { 0%,74%{opacity:0} 75%{opacity:1} }
+    @keyframes l20 { 0%,78%{opacity:0} 79%{opacity:1} }
+    @keyframes l21 { 0%,82%{opacity:0} 83%{opacity:1} }
+    @keyframes l22 { 0%,86%{opacity:0} 87%{opacity:1} }
+
+    .term-bg { fill: #1e1e2e; rx: 10; }
+    .title-bar { fill: #313244; }
+    .dot-red { fill: #f38ba8; }
+    .dot-yellow { fill: #f9e2af; }
+    .dot-green { fill: #a6e3a1; }
+    .title-text { fill: #cdd6f4; font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', Consolas, monospace; font-size: 13px; }
+    text { font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', Consolas, monospace; font-size: 13px; }
+    .prompt { fill: #89b4fa; }
+    .cmd { fill: #cdd6f4; }
+    .comment { fill: #6c7086; }
+    .output { fill: #a6adc8; }
+    .dim { fill: #585b70; }
+    .green { fill: #a6e3a1; }
+    .red { fill: #f38ba8; }
+    .yellow { fill: #f9e2af; }
+    .blue { fill: #89b4fa; }
+    .purple { fill: #cba6f7; }
+    .bold { font-weight: bold; }
+    .cursor { fill: #cdd6f4; animation: blink 1s infinite; }
+
+    .line1  { opacity:0; animation: l1  30s infinite; }
+    .line2  { opacity:0; animation: l2  30s infinite; }
+    .line3  { opacity:0; animation: l3  30s infinite; }
+    .line4  { opacity:0; animation: l4  30s infinite; }
+    .line5  { opacity:0; animation: l5  30s infinite; }
+    .line6  { opacity:0; animation: l6  30s infinite; }
+    .line7  { opacity:0; animation: l7  30s infinite; }
+    .line8  { opacity:0; animation: l8  30s infinite; }
+    .line9  { opacity:0; animation: l9  30s infinite; }
+    .line10 { opacity:0; animation: l10 30s infinite; }
+    .line11 { opacity:0; animation: l11 30s infinite; }
+    .line12 { opacity:0; animation: l12 30s infinite; }
+    .line13 { opacity:0; animation: l13 30s infinite; }
+    .line14 { opacity:0; animation: l14 30s infinite; }
+    .line15 { opacity:0; animation: l15 30s infinite; }
+    .line16 { opacity:0; animation: l16 30s infinite; }
+    .line17 { opacity:0; animation: l17 30s infinite; }
+    .line18 { opacity:0; animation: l18 30s infinite; }
+    .line19 { opacity:0; animation: l19 30s infinite; }
+    .line20 { opacity:0; animation: l20 30s infinite; }
+    .line21 { opacity:0; animation: l21 30s infinite; }
+    .line22 { opacity:0; animation: l22 30s infinite; }
+  </style>
+
+  <!-- Terminal window -->
+  <rect class="term-bg" width="850" height="620" />
+
+  <!-- Title bar -->
+  <rect class="title-bar" width="850" height="36" rx="10" />
+  <rect class="title-bar" width="850" height="16" y="20" />
+  <circle class="dot-red" cx="20" cy="18" r="6" />
+  <circle class="dot-yellow" cx="40" cy="18" r="6" />
+  <circle class="dot-green" cx="60" cy="18" r="6" />
+  <text class="title-text" x="425" y="23" text-anchor="middle">Claude Code — prompt-evaluator demo</text>
+
+  <!-- Terminal content -->
+  <g transform="translate(16, 56)">
+    <!-- Line 1: User prompt -->
+    <g class="line1">
+      <text class="prompt" y="0">❯</text>
+      <text class="cmd" x="18" y="0">Evaluate this system prompt:</text>
+    </g>
+
+    <!-- Line 2: The prompt being evaluated -->
+    <g class="line2">
+      <text class="yellow" y="22">"You are a customer support agent. Help users with their questions. Be nice."</text>
+    </g>
+
+    <!-- Line 3: Loading skill -->
+    <g class="line3">
+      <text class="comment" y="52">⚡ Loading skill: prompt-evaluator v1.0</text>
+    </g>
+
+    <!-- Line 4: Scoring header -->
+    <g class="line4">
+      <text class="blue bold" y="80">━━━ 8-Dimension Evaluation ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+    </g>
+
+    <!-- Lines 5-12: Scores -->
+    <g class="line5">
+      <text class="output" y="104">Clarity</text>
+      <text class="dim" x="200" y="104">████░░░░░░</text>
+      <text class="yellow" x="330" y="104">4/10</text>
+      <text class="comment" x="390" y="104">"Help users" too vague, no scope defined</text>
+    </g>
+    <g class="line6">
+      <text class="output" y="126">Specificity</text>
+      <text class="dim" x="200" y="126">██░░░░░░░░</text>
+      <text class="red" x="330" y="126">2/10</text>
+      <text class="comment" x="390" y="126">No format, tone, or escalation rules</text>
+    </g>
+    <g class="line7">
+      <text class="output" y="148">Completeness</text>
+      <text class="dim" x="200" y="148">██░░░░░░░░</text>
+      <text class="red" x="330" y="148">2/10</text>
+      <text class="comment" x="390" y="148">Missing product knowledge, policies</text>
+    </g>
+    <g class="line8">
+      <text class="output" y="170">Conciseness</text>
+      <text class="dim" x="200" y="170">██████░░░░</text>
+      <text class="yellow" x="330" y="170">6/10</text>
+      <text class="comment" x="390" y="170">Short but lacking substance</text>
+    </g>
+    <g class="line9">
+      <text class="output" y="192">Structure</text>
+      <text class="dim" x="200" y="192">██░░░░░░░░</text>
+      <text class="red" x="330" y="192">2/10</text>
+      <text class="comment" x="390" y="192">Plain text, no sections</text>
+    </g>
+    <g class="line10">
+      <text class="output" y="214">Grounding</text>
+      <text class="dim" x="200" y="214">█░░░░░░░░░</text>
+      <text class="red" x="330" y="214">1/10</text>
+      <text class="comment" x="390" y="214">Zero examples or references</text>
+    </g>
+    <g class="line11">
+      <text class="output" y="236">Safety</text>
+      <text class="dim" x="200" y="236">█░░░░░░░░░</text>
+      <text class="red" x="330" y="236">1/10</text>
+      <text class="comment" x="390" y="236">No injection protection at all</text>
+    </g>
+    <g class="line12">
+      <text class="output" y="258">Robustness</text>
+      <text class="dim" x="200" y="258">██░░░░░░░░</text>
+      <text class="red" x="330" y="258">2/10</text>
+      <text class="comment" x="390" y="258">Inconsistent outputs likely</text>
+    </g>
+
+    <!-- Line 13: Score -->
+    <g class="line13">
+      <text class="blue bold" y="286">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+    </g>
+    <g class="line14">
+      <text class="red bold" y="310">Overall Score: 28/100 — Needs fundamental restructuring</text>
+    </g>
+
+    <!-- Line 15: Generating rewrite -->
+    <g class="line15">
+      <text class="comment" y="340">⚡ Generating optimized rewrite...</text>
+    </g>
+
+    <!-- Lines 16-19: Rewrite preview -->
+    <g class="line16">
+      <text class="green bold" y="368">━━━ Optimized Prompt (preview) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+    </g>
+    <g class="line17">
+      <text class="green" y="392">You are a customer support agent for [Company Name].</text>
+    </g>
+    <g class="line18">
+      <text class="green" y="414">## Scope — orders, shipping, returns, product info</text>
+    </g>
+    <g class="line19">
+      <text class="green" y="436">## Response Guidelines — professional, empathetic, 2-4 sentences</text>
+    </g>
+    <g class="line20">
+      <text class="green" y="458">## Output Format — acknowledge → solve → follow-up</text>
+    </g>
+    <g class="line21">
+      <text class="green" y="480">## Safety Rules (IMMUTABLE) — 4 anti-injection rules</text>
+    </g>
+
+    <!-- Line 22: Final score -->
+    <g class="line22">
+      <text class="green bold" y="516">Re-evaluated Score: 82/100 (+54 points)</text>
+      <text class="purple" y="540">Top improvements: Safety 1→8 | Specificity 2→8 | Structure 2→9</text>
+    </g>
+  </g>
+</svg>
