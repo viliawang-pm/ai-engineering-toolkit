@@ -1,157 +1,217 @@
+<div align="center">
+
 # AI Engineering Toolkit
 
-> A collection of production-ready Agent Skills for AI engineering — covering
-> prompt evaluation, context budget planning, RAG pipeline design, agent
-> safety, and systematic evaluation frameworks.
+### Stop reading about AI engineering. Start executing it.
 
-[![Agent Skills Standard](https://img.shields.io/badge/Agent_Skills-v1.0-blue)](https://agentskills.io)
+6 production-ready Agent Skills that turn your AI coding assistant into an AI engineering expert — covering prompt evaluation, context optimization, RAG design, agent security, evaluation frameworks, and product thinking.
+
+[![GitHub Stars](https://img.shields.io/github/stars/viliawang-pm/ai-engineering-toolkit?style=social)](https://github.com/viliawang-pm/ai-engineering-toolkit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-5-orange)]()
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-v1.0-blue)](https://agentskills.io)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-ready-8A2BE2)]()
+[![WorkBuddy](https://img.shields.io/badge/WorkBuddy-ready-00C853)]()
 
-## Why This Toolkit?
+[Quick Start](#-quick-start) · [Skills Overview](#-whats-inside) · [Examples](#-see-it-in-action) · [Contributing](#-contributing)
 
-Most AI engineering resources teach you **what** context engineering or RAG
-is. This toolkit gives you **executable workflows** — structured, step-by-step
-skills that an AI agent can load and follow to actually build, evaluate, and
-secure your AI systems.
+</div>
 
-| Existing Resources | This Toolkit |
-|-------------------|-------------|
-| Theory-oriented | Execution-oriented |
-| "Here's what RAG is" | "Here's how to build, evaluate & optimize a RAG pipeline" |
-| Conceptual frameworks | Scoring rubrics, checklists, decision trees |
-| English-only | Designed for global adoption |
+---
 
-## Skills Included
+## The Problem
 
-| # | Skill | Description |
-|---|-------|------------|
-| 1 | **[prompt-evaluator](skills/prompt-evaluator/)** | Evaluate LLM prompts across 8 quality dimensions with quantitative scoring and automated rewrite suggestions |
-| 2 | **[context-budget-planner](skills/context-budget-planner/)** | Plan token allocation across 5 context zones, identify waste, and optimize cost-quality tradeoffs |
-| 3 | **[rag-pipeline-architect](skills/rag-pipeline-architect/)** | Design end-to-end RAG systems from document ingestion to retrieval evaluation, covering 3 architecture tiers |
-| 4 | **[agent-safety-guard](skills/agent-safety-guard/)** | Implement defense-in-depth security for AI agents with 5-layer protection and red-team testing checklists |
-| 5 | **[eval-harness-builder](skills/eval-harness-builder/)** | Build systematic evaluation frameworks with automated metrics, LLM-as-a-Judge, and CI/CD integration |
+Most AI engineering resources tell you **what** RAG, context engineering, or prompt optimization is. But when you sit down to actually build, you're on your own — figuring out chunking strategies, token budgets, and safety architectures from scratch.
 
-## Quick Start
+**This toolkit changes that.** Each skill is a structured, executable workflow that your AI agent loads and follows step by step. Think of it as hiring a senior AI engineer who sits inside your IDE.
 
-### Claude Code / WorkBuddy
+<table>
+<tr>
+<td width="50%">
+
+**Without This Toolkit**
+
+- "Here's what RAG is" (theory)
+- Vague best practices scattered across blog posts
+- Trial and error with prompt design
+- No systematic evaluation framework
+- Security as an afterthought
+
+</td>
+<td width="50%">
+
+**With This Toolkit**
+
+- "Here's how to build, evaluate & optimize a RAG pipeline" (execution)
+- Decision trees, scoring rubrics, and checklists
+- 8-dimension prompt scoring with automated rewrites
+- CI/CD-integrated eval harness with LLM-as-Judge
+- 5-layer defense architecture with 65-point red-team checklist
+
+</td>
+</tr>
+</table>
+
+## 🎬 Demo
+
+<!-- 📌 TODO: Record a 30-second GIF showing prompt-evaluator in action -->
+<!-- Replace the placeholder below with your actual GIF -->
+
+> **Coming soon** — a 30-second demo showing the prompt-evaluator skill scoring a real system prompt inside Claude Code. Star the repo to get notified!
+
+## 📦 What's Inside
+
+| # | Skill | What It Does | Highlight |
+|:-:|-------|-------------|-----------|
+| 1 | **[prompt-evaluator](skills/prompt-evaluator/)** | Score any LLM prompt across 8 quality dimensions (0-100), then auto-generate an optimized rewrite | Supports single eval, A/B comparison, and batch mode |
+| 2 | **[context-budget-planner](skills/context-budget-planner/)** | Plan token allocation across 5 context zones, find waste, optimize cost-quality tradeoffs | Includes allocation profiles for 6 common use cases |
+| 3 | **[rag-pipeline-architect](skills/rag-pipeline-architect/)** | Design end-to-end RAG systems from document ingestion to retrieval evaluation | Covers Naive → Advanced → Modular RAG with decision trees |
+| 4 | **[agent-safety-guard](skills/agent-safety-guard/)** | Implement defense-in-depth security with 5-layer protection and red-team testing | 65+ test cases across 5 attack categories |
+| 5 | **[eval-harness-builder](skills/eval-harness-builder/)** | Build systematic evaluation frameworks with automated metrics and LLM-as-Judge | CI/CD integration templates included |
+| 6 | **[product-sense-coach](skills/product-sense-coach/)** | A thinking partner for PMs — sharpen product intuition through guided conversation | 5-phase framework inspired by first-principles product thinking |
+
+## 🚀 Quick Start
+
+### Option 1: One-line install (Claude Code / WorkBuddy)
 
 ```bash
-# Add as a plugin marketplace source
-/plugin marketplace add viliawang-pm/ai-engineering-toolkit
+# Install the entire toolkit
+/skill install -g viliawang-pm/ai-engineering-toolkit
 
-# Or install individual skills
-/plugin install prompt-evaluator@ai-engineering-toolkit
-/plugin install rag-pipeline-architect@ai-engineering-toolkit
+# Or install a single skill
+/skill install -g viliawang-pm/ai-engineering-toolkit/prompt-evaluator
 ```
 
-### Manual Installation
+### Option 2: Manual install
 
 ```bash
-# Clone the repository
+# Clone and copy to your global skills directory
 git clone https://github.com/viliawang-pm/ai-engineering-toolkit.git
-
-# Copy skills to your project
-cp -r ai-engineering-toolkit/skills/prompt-evaluator .claude/skills/
+cp -r ai-engineering-toolkit/skills/prompt-evaluator ~/.claude/skills/
+# or for WorkBuddy:
+cp -r ai-engineering-toolkit/skills/prompt-evaluator ~/.workbuddy/skills/
 ```
 
-### Claude.ai / API
+### Option 3: Use with Claude.ai / API
 
-Upload individual `SKILL.md` files as project knowledge or include them
-in your system prompt.
+Upload any `SKILL.md` file as project knowledge or include it in your system prompt. Each skill is a self-contained Markdown file — no dependencies, no setup.
 
-## Usage Examples
+## 💡 See It in Action
 
-### Evaluate a Prompt
+### Example 1: Evaluate a System Prompt
 
-> "Use the prompt-evaluator skill to evaluate this system prompt for my
-> customer support chatbot: [paste prompt]"
+**You say:**
+> "Evaluate this system prompt for my customer support chatbot"
 
-The agent will produce a scored rubric (8 dimensions, 0-100 overall)
-with specific improvement suggestions and an optimized rewrite.
+```
+You are a customer support agent. Help users with their questions. Be nice and helpful.
+```
 
-### Plan Context Budget
+**The agent produces:**
 
-> "Use the context-budget-planner skill to optimize my RAG agent's context
-> window. I'm using Claude 3.5 Sonnet with a 200K context window."
+| Dimension | Score | Assessment |
+|-----------|:-----:|-----------|
+| Clarity | 4/10 | "Help users" is too vague; no scope defined |
+| Specificity | 2/10 | No output format, tone guidelines, or escalation rules |
+| Completeness | 2/10 | Missing: product knowledge, refund policy, fallbacks |
+| Safety | 1/10 | No guardrails against prompt injection or off-topic requests |
+| **Overall** | **28/100** | Needs fundamental restructuring |
 
-The agent will analyze your current token allocation, identify waste,
-and produce a before/after budget with cost projections.
+Then auto-generates a production-ready rewrite with proper role definition, scope boundaries, response format, and safety guardrails.
 
-### Design a RAG Pipeline
+### Example 2: Optimize a Context Budget
 
-> "Use the rag-pipeline-architect skill to help me build a RAG system for
-> our internal documentation (500 Markdown files, technical content)."
+**You say:**
+> "My RAG agent keeps hitting the 128K context limit. Help me optimize."
 
-The agent will guide you through document analysis, chunking strategy
-selection, embedding model choice, retrieval design, and evaluation setup.
+**The agent analyzes your current allocation:**
 
-### Security Audit
+```
+Before: System 25K (20%) | RAG 50K (39%) | History 45K (35%) | Output 8K (6%)
+After:  System 12K (9%)  | RAG 35K (27%) | History 20K (16%) | Output 20K (16%) | Free 41K (32%)
 
-> "Use the agent-safety-guard skill to red-team test our production chatbot
-> before launch."
+Result: 3x more output room, zero truncation, 30% cost reduction
+```
 
-The agent will run through the 65+ test checklist across 5 attack
-categories and produce a security assessment report.
+### Example 3: Red-Team Your Agent
 
-### Build an Eval Framework
+**You say:**
+> "We're launching our AI agent next week. Run a security audit."
 
-> "Use the eval-harness-builder skill to set up evaluation for our Q&A bot.
-> We need to measure correctness, faithfulness, and relevance."
+**The agent executes a 65-point red-team checklist** across 5 attack categories — direct prompt injection, indirect injection, information extraction, tool abuse, and goal hijacking — then produces a security assessment with pass/fail/partial scores and specific remediation steps.
 
-The agent will design the eval config, help build the dataset, implement
-scoring (automated + LLM judge), and set up CI/CD integration.
+### Example 4: Think Through a Product Idea
 
-## Compatibility
+**You say:**
+> "I want to build a social reading app where people highlight and discuss books together."
 
-These skills follow the [Agent Skills Standard](https://agentskills.io)
-and are compatible with:
+**The agent becomes your thinking partner**, walking through 5 guided conversations: uncovering the origin story behind your idea, sizing the opportunity, mapping the path to your first 100 users, co-creating vivid usage scenarios, and analyzing the competitive landscape — then produces a Product Clarity Map with concrete next steps.
 
-- ✅ Claude Code / WorkBuddy
-- ✅ Claude.ai (paid plans)
-- ✅ Claude API
-- ✅ OpenAI Codex
-- ✅ Gemini CLI
-- ✅ Cursor
-- ✅ Windsurf
-- ✅ GitHub Copilot
+## ✅ Compatibility
 
-## Project Structure
+These skills follow the open [Agent Skills Standard](https://agentskills.io) and work with:
+
+| Platform | Status |
+|----------|:------:|
+| Claude Code | Supported |
+| WorkBuddy | Supported |
+| Claude.ai (paid plans) | Supported |
+| Claude API | Supported |
+| Cursor | Supported |
+| Windsurf | Supported |
+| GitHub Copilot | Supported |
+| OpenAI Codex | Supported |
+| Gemini CLI | Supported |
+
+## 📁 Project Structure
 
 ```
 ai-engineering-toolkit/
 ├── README.md
 ├── LICENSE
-├── skills/
-│   ├── prompt-evaluator/
-│   │   └── SKILL.md
-│   ├── context-budget-planner/
-│   │   └── SKILL.md
-│   ├── rag-pipeline-architect/
-│   │   └── SKILL.md
-│   ├── agent-safety-guard/
-│   │   └── SKILL.md
-│   └── eval-harness-builder/
-│       └── SKILL.md
-└── examples/
-    └── (coming soon)
+├── CONTRIBUTING.md
+├── PUBLISHING_GUIDE.md          ← 发布指南（中文）
+└── skills/
+    ├── prompt-evaluator/        ← 8-dimension prompt scoring
+    │   └── SKILL.md
+    ├── context-budget-planner/  ← Token budget optimization
+    │   └── SKILL.md
+    ├── rag-pipeline-architect/  ← End-to-end RAG design
+    │   └── SKILL.md
+    ├── agent-safety-guard/      ← 5-layer defense + red-team
+    │   └── SKILL.md
+    ├── eval-harness-builder/    ← Eval framework + CI/CD
+    │   └── SKILL.md
+    └── product-sense-coach/     ← PM thinking partner
+        └── SKILL.md
 ```
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are welcome! To add a new skill:
+Contributions are welcome! Whether it's a new skill, an improvement to an existing one, or a bug report — we appreciate it all.
 
 1. Fork this repository
-2. Create a new directory under `skills/`
+2. Create a new directory under `skills/` (lowercase, hyphenated name)
 3. Add a `SKILL.md` following the [Agent Skills spec](https://agentskills.io)
-4. Submit a pull request with a description of the skill and example usage
+4. Submit a pull request with a description and usage example
 
-## License
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines and quality standards.
+
+## 📄 License
 
 MIT License — see [LICENSE](LICENSE) for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - [Anthropic](https://anthropic.com) for the Agent Skills standard
 - [agentskills.io](https://agentskills.io) for the open specification
-- The Claude Code and AI engineering community
+- The Claude Code, WorkBuddy, and AI engineering community
+
+---
+
+<div align="center">
+
+**If these skills save you time, consider giving the repo a ⭐**
+
+It helps others discover the toolkit and motivates continued development.
+
+</div>
