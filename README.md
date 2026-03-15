@@ -2,48 +2,40 @@
 
 # AI Engineering Toolkit
 
-### Your AI agent knows how to code. These skills teach it how to *engineer*.
+### One command. Your prompt goes from 28 → 82. No manual work.
 
-6 executable workflows that turn Claude Code / WorkBuddy into a senior AI engineering partner — prompt evaluation, context optimization, RAG pipeline design, agent security auditing, evaluation frameworks, and product thinking.
+<br>
+
+<img src="assets/demo.svg" alt="prompt-evaluator: paste a bad prompt, get a production-ready rewrite in seconds" width="100%">
+
+<br>
 
 [![GitHub Stars](https://img.shields.io/github/stars/viliawang-pm/ai-engineering-toolkit?style=social)](https://github.com/viliawang-pm/ai-engineering-toolkit)
 [![GitHub Forks](https://img.shields.io/github/forks/viliawang-pm/ai-engineering-toolkit?style=social)](https://github.com/viliawang-pm/ai-engineering-toolkit/fork)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-v1.0-blue)](https://agentskills.io)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-ready-8A2BE2)]()
 [![WorkBuddy](https://img.shields.io/badge/WorkBuddy-ready-00C853)]()
+[![Cursor](https://img.shields.io/badge/Cursor-ready-orange)]()
 
-[Quick Start](#-quick-start) · [Skills Overview](#-whats-inside) · [Examples](#-see-it-in-action) · [Contributing](#-contributing)
+**Install in 5 seconds** — paste this into Claude Code or WorkBuddy:
+
+```
+/skill install -g viliawang-pm/ai-engineering-toolkit
+```
+
+[What's Inside](#-whats-inside) · [See It in Action](#-see-it-in-action) · [Quick Start](#-quick-start) · [Contributing](#-contributing)
 
 </div>
 
 ---
 
-## 🎬 See It Work — 30 Seconds
+## Why This Exists
 
-<div align="center">
-<img src="assets/demo.svg" alt="prompt-evaluator demo — scoring a system prompt from 28 to 82 in Claude Code" width="100%">
-<br>
-<sub>prompt-evaluator: diagnose → score → rewrite → re-score, all inside Claude Code</sub>
-</div>
+You already know what RAG, prompt engineering, and context windows are. The problem is the **gap between knowing and doing** — you sit down to build, and you're back to Stack Overflow, trial-and-error, and "looks good to me" code reviews.
 
----
+This toolkit fills that gap with **6 executable workflows** that your AI agent loads and follows step by step. Not theory. Not blog posts. Actual structured processes — the kind a senior AI engineer would run.
 
-## The Problem
-
-You know **what** RAG, context engineering, and prompt optimization are. But when you sit down to build, you're on your own — figuring out chunking strategies, token budgets, and safety architectures from scratch, one Stack Overflow tab at a time.
-
-**This toolkit closes that gap.** Each skill is a structured, step-by-step workflow that your AI agent loads and executes. Think of it as a senior AI engineer who lives inside your IDE and never forgets a best practice.
-
-### Before / After
-
-| | Without this toolkit | With this toolkit |
-|---|---|---|
-| **Prompt quality** | "Looks good to me" (gut feeling) | 8-dimension score: **28/100** → rewrite → **82/100** |
-| **Context window** | Hits 128K limit, answers truncate | Token budget plan: output space **6% → 16%**, truncation → zero |
-| **RAG pipeline** | Copy a tutorial, hope for the best | Decision tree: chunking → embedding → retrieval → evaluation |
-| **Agent security** | Ship and pray | 65-point red-team audit, 3 critical failures caught before launch |
-| **Evaluation** | Manual spot-checking | Automated eval harness with LLM-as-Judge + CI/CD integration |
+> **Think of it this way:** your AI agent already writes great code. These skills teach it how to *engineer* — evaluate prompts, optimize context, design RAG pipelines, audit agent security, and build eval frameworks.
 
 ## 📦 What's Inside
 
