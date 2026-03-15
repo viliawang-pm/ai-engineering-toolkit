@@ -67,7 +67,7 @@ Most AI engineering resources tell you **what** RAG, context engineering, or pro
 | 3 | **[rag-pipeline-architect](skills/rag-pipeline-architect/)** | Design end-to-end RAG systems from document ingestion to retrieval evaluation | Covers Naive → Advanced → Modular RAG with decision trees |
 | 4 | **[agent-safety-guard](skills/agent-safety-guard/)** | Implement defense-in-depth security with 5-layer protection and red-team testing | 65+ test cases across 5 attack categories |
 | 5 | **[eval-harness-builder](skills/eval-harness-builder/)** | Build systematic evaluation frameworks with automated metrics and LLM-as-Judge | CI/CD integration templates included |
-| 6 | **[product-sense-coach](skills/product-sense-coach/)** | A thinking partner for PMs — sharpen product intuition through guided conversation | 5-phase framework inspired by first-principles product thinking |
+| 6 | **[product-sense-coach](https://github.com/viliawang-pm/product-sense-coach)** | A thinking partner for PMs — sharpen product intuition through guided conversation | Standalone repo — 5-phase framework inspired by first-principles product thinking |
 
 ## 🚀 Quick Start
 
